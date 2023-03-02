@@ -1,7 +1,8 @@
-@import "variables/font.scss";
-@import "variables/colors.scss"; 
-@import "content/body.scss";
-@import "content/header.scss";
-@import "content/animaciones.scss";
-@import "content/mediaquery.scss"; 
-@import "pages_scss/contact.scss"; 
+@import "style/normalize";
+@import "variables/colors";
+@import "variables/font";
+@import "mixins/mixins";
+@import "content/tags";
+@import "content/animaciones";
+@import "content/classes";
+@import "content/background";

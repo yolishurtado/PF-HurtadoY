@@ -1,66 +1,78 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62,5%; }
+
 body {
-  min-height: 700px;
-  height: auto;
+  min-height: 100%;
   width: 100%;
-  margin: 4% auto;
   background-image: url(../images/fondo1.jpg);
   background-repeat: repeat;
   background-size: 100%;
-  padding: 4em;
   color: #000000;
   font-family: "Anonymous Pro", monospace; }
+
+main {
+  min-height: 100%;
+  padding: 4em; }
 
 header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
-  font-size: 62, 5%; }
+  background-color: #8f6c86;
+  font-size: 62, 5%;
+  margin-bottom: 56px; }
+  header nav {
+    text-align: right;
+    display: inline-block;
+    width: 100%; }
+  header ul {
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    padding: 0 1rem; }
+    header ul li {
+      display: inline-block; }
+      header ul li a {
+        text-decoration: none;
+        border: none;
+        border-color: #000000;
+        border-radius: 50px;
+        background-color: none;
+        color: white;
+        padding: 0.3em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+        header ul li a:hover {
+          background-color: rgba(171, 193, 198, 0.87);
+          border-color: #000000; }
 
-.navbar {
-  text-align: right;
-  display: flex;
-  width: 100%; }
+footer {
+  display: block;
+  margin-top: 7%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  padding: 3px;
+  background-color: rgba(171, 193, 198, 0.87);
+  color: #000000; }
 
-.container {
-  margin: 15px; }
-
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: 30rem;
-  margin: 0 auto;
-  border-right: 2px solid #000000;
-  font-size: 180%;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%); }
-
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal; }
-
-@keyframes typewriter {
-  from {
-    width: 0; }
-  to {
-    width: 300px; } }
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(0, 0, 0, 0.75); }
-  to {
-    border-right-color: transparent; } }
-
-.pronto {
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 2rem;
-  margin: 0 auto;
-  font-family: "Courier New";
-  border-right: 0.15em solid #0a0a0a;
-  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite; }
+h2 {
+  display: inline;
+  font: 4rem Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: #6d5b6d; }
+  h2:after {
+    content: "Contact";
+    position: absolute;
+    left: 16px;
+    color: rgba(171, 193, 198, 0.87); }
+  @media screen and (min-width: 678px) {
+    h2 {
+      font-size: 8rem; } }
 
 @keyframes typing {
   from {
@@ -71,3 +83,133 @@ header {
 @keyframes blink {
   20% {
     border-color: transparent; } }
+
+@keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: 17ch; } }
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75); }
+  to {
+    border-right-color: transparent; } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.anim-typewriter {
+  animation: typewriter 4s steps(34) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal; }
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid #313233;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite; }
+
+.pronto {
+  overflow: hidden;
+  white-space: wrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-family: "Courier New";
+  border-right: 0.15em solid #0a0a0a;
+  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite; }
+  @media screen and (max-width: 425px) {
+    .pronto {
+      font-size: 1rem !important; } }
+
+.name {
+  font-size: xx-large; }
+  @media screen and (max-width: 425px) {
+    .name {
+      font-size: 20px !important; } }
+
+.C {
+  background-color: #ad89a7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100px; }
+  .C p {
+    font-weight: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .C h6 {
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.B {
+  background-color: #8f6c86;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100px; }
+  .B p {
+    font-weight: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .B h6 {
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.A {
+  background-color: #6d5b6d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100px; }
+  .A p {
+    font-weight: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .A h6 {
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.navbar {
+  text-align: right;
+  display: flex;
+  width: 100%; }
+
+.container {
+  margin: 15px; }
+
+.aboutMe {
+  display: flex; }
+
+.line-1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border-right: 2px solid #000000;
+  font-size: 180%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.containerArticle {
+  margin-top: 5%; }
+
+.containerPortafolio {
+  margin-top: 7%;
+  font-weight: 100; }
+
+.contactMail {
+  margin-top: 3%;
+  border: #000000; }
+
+.socialMediaP p {
+  font-size: larger; }
+
+.formularioContact {
+  background-color: rgba(171, 193, 198, 0.87); }
+
+.mail {
+  background-color: #6d5b6d; }
+
+.socialMedia {
+  margin-top: 4%;
+  background-color: #ad89a7; }

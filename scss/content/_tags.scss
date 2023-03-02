@@ -1,0 +1,87 @@
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    background-image: url(../images/fondo1.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    color: $color-primary;
+    font-family: "Anonymous Pro", monospace;
+}
+
+main {
+    min-height: 100%;
+    padding: 4em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color3;
+    font-size:$font-size-primary;
+    margin-bottom: 56px;
+    nav {
+        text-align: right;
+        display:inline-block;
+        width: 100%;
+    }
+    ul {   
+        text-align: right;
+        display: inline-block;
+        width: 100%;
+        padding: 0 1rem;
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                border:none;
+                border-color: #000000;
+                border-radius: 50px;
+                background-color: none;
+                color: rgb(255, 255, 255);
+                padding: 0.3em;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+                &:hover {
+                    background-color:rgba(171, 193, 198, 0.87);
+                    border-color: #000000;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display:block;
+    margin-top: 7% ;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(171, 193, 198, 0.87);
+    color: #000000;
+}
+  
+h2 {
+    display: inline;
+    font: 4rem Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color:rgb(109, 91, 109); 
+    
+    &:after {
+        content: "Contact";
+        position: absolute;
+        left: 16px;
+        color: rgba(171, 193, 198, 0.87) 
+    }
+    
+    @media screen and (min-width: 678px) {
+        font-size: 8rem;
+    }
+}

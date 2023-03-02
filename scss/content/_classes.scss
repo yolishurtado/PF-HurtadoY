@@ -1,0 +1,62 @@
+.name {
+    font-size:xx-large;
+    @media screen and (max-width: 425px) {
+        font-size: 20px !important;
+    }
+}
+
+.C {
+    @include colInfo (rgb(173, 137, 167));
+}
+
+.B { 
+    @include colInfo (rgb(143, 108, 134));
+}
+
+.A { 
+    @include colInfo (rgb(109, 91, 109));
+}
+
+.navbar {
+    text-align: right;
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    margin: 15px;
+}
+
+.aboutMe {
+    display: flex;
+}
+
+.line-1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 2px solid $color-primary;
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.containerArticle {
+    margin-top: 5%;
+}
+
+.containerPortafolio {
+    margin-top: 7%;
+    font-weight: 100;
+
+}
+
+.contactMail {
+    margin-top: 3%;
+    border: #000000;
+}
+.socialMediaP {
+    p {
+        font-size: larger;
+    }
+}
