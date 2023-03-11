@@ -6,7 +6,6 @@
   "scripts": {
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
- 
   },
   "repository": {
     "type": "git",
@@ -14,8 +13,8 @@
   },
   "author": "Yolisbert Hurtado",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.21"
   }
 }

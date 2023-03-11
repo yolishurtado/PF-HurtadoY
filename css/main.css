@@ -16,7 +16,10 @@ body {
 
 main {
   min-height: 100%;
-  padding: 4em; }
+  padding: 2em; }
+  @media screen and (min-width: 768px) {
+    main {
+      padding: 4em; } }
 
 header {
   display: flex;
@@ -57,22 +60,22 @@ footer {
   margin-right: 0%;
   text-align: center;
   padding: 3px;
-  background-color: rgba(171, 193, 198, 0.87);
-  color: #000000; }
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white; }
 
 h2 {
   display: inline;
   font: 4rem Helvetica, Sans-Serif;
   letter-spacing: -5px;
   color: #6d5b6d; }
-  h2:after {
-    content: "Contact";
-    position: absolute;
-    left: 16px;
-    color: rgba(171, 193, 198, 0.87); }
+  h2 span {
+    text-shadow: -10px 1px 1px #87b6c2; }
   @media screen and (min-width: 678px) {
     h2 {
       font-size: 8rem; } }
+
+h3 {
+  color: #6d5b6d; }
 
 @keyframes typing {
   from {
@@ -198,11 +201,30 @@ h2 {
   font-weight: 100; }
 
 .contactMail {
-  margin-top: 3%;
   border: #000000; }
 
 .socialMediaP p {
   font-size: larger; }
+
+.section-carousel {
+  margin: 0px auto;
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .section-carousel {
+      width: 50%; } }
+
+.section-form {
+  margin: 0px auto;
+  width: 100%; }
+  .section-form article {
+    margin: 0px; }
+  @media screen and (min-width: 1024px) {
+    .section-form {
+      width: 70%; } }
+
+@media screen and (min-width: 1024px) {
+  .skils_cont {
+    width: 320px; } }
 
 .formularioContact {
   background-color: rgba(171, 193, 198, 0.87); }
@@ -213,3 +235,12 @@ h2 {
 .socialMedia {
   margin-top: 4%;
   background-color: #ad89a7; }
+
+.aboutMeInfo {
+  background-color: #6d5b6d; }
+
+.aboutMeText {
+  background-color: white; }
+
+.skils_cont {
+  background-color: white; }

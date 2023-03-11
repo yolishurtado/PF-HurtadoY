@@ -52,7 +52,6 @@
 }
 
 .contactMail {
-    margin-top: 3%;
     border: #000000;
 }
 .socialMediaP {
@@ -60,3 +59,34 @@
         font-size: larger;
     }
 }
+
+.section-carousel {
+    margin: 0px auto;
+    width: 100%;
+    @media screen and (min-width: 1024px){
+        width: 50%;
+        
+    }
+}
+
+.section-form {
+    margin: 0px auto;
+    width: 100%;
+
+    article {
+        margin: 0px;
+    }
+    @media screen and (min-width: 1024px){
+        width: 70%;
+        
+    }
+
+}
+.skils_cont{
+    @media screen and (min-width: 1024px){
+        width: 320px;
+    }
+        
+    }
+
+

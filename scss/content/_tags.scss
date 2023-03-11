@@ -14,8 +14,12 @@ body {
 }
 
 main {
+    $pd:2em;
     min-height: 100%;
-    padding: 4em;
+    padding: $pd;
+    @media screen and (min-width: 768px){
+        padding: ($pd * 2);
+    }
 }
 
 header {
@@ -64,24 +68,24 @@ footer {
     margin-right: 0%;
     text-align: center;
     padding: 3px;
-    background-color: rgba(171, 193, 198, 0.87);
-    color: #000000;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
 }
-  
+
 h2 {
     display: inline;
     font: 4rem Helvetica, Sans-Serif;
     letter-spacing: -5px;
-    color:rgb(109, 91, 109); 
+    color:rgb(109, 91, 109);
     
-    &:after {
-        content: "Contact";
-        position: absolute;
-        left: 16px;
-        color: rgba(171, 193, 198, 0.87) 
+    span {
+        text-shadow: -10px 1px 1px #87b6c2;
     }
     
     @media screen and (min-width: 678px) {
         font-size: 8rem;
     }
 }
+ h3 {
+    color: rgb(109, 91, 109);
+ }
