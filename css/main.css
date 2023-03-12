@@ -132,7 +132,7 @@ h3 {
   font-size: xx-large; }
   @media screen and (max-width: 425px) {
     .name {
-      font-size: 70px !important; } }
+      font-size: 20px !important; } }
 
 .C {
   background-color: #ad89a7;
@@ -225,8 +225,8 @@ h3 {
 .imagDev {
   width: 300px; }
 
-.interesedPart {
-  background-color: #ad89a7; }
+.imagWeb {
+  width: 300px; }
 
 .formularioContact {
   background-color: rgba(171, 193, 198, 0.87); }
@@ -246,3 +246,9 @@ h3 {
 
 .aboutMeInfo {
   background-color: white; }
+
+.tips {
+  background-color: white; }
+
+.friend_boostrap {
+  background-color: #6d5b6d; }
