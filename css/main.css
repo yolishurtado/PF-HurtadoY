@@ -132,7 +132,7 @@ h3 {
   font-size: xx-large; }
   @media screen and (max-width: 425px) {
     .name {
-      font-size: 20px !important; } }
+      font-size: 70px !important; } }
 
 .C {
   background-color: #ad89a7;
@@ -222,9 +222,11 @@ h3 {
     .section-form {
       width: 70%; } }
 
-@media screen and (min-width: 1024px) {
-  .skils_cont {
-    width: 320px; } }
+.imagDev {
+  width: 300px; }
+
+.interesedPart {
+  background-color: #ad89a7; }
 
 .formularioContact {
   background-color: rgba(171, 193, 198, 0.87); }
@@ -236,11 +238,11 @@ h3 {
   margin-top: 4%;
   background-color: #ad89a7; }
 
-.aboutMeInfo {
+.aboutMeText {
   background-color: #6d5b6d; }
 
-.aboutMeText {
-  background-color: white; }
+.skills_content {
+  background-color: rgba(171, 193, 198, 0.87); }
 
-.skils_cont {
+.aboutMeInfo {
   background-color: white; }
