@@ -77,6 +77,10 @@ h2 {
 h3 {
   color: #6d5b6d; }
 
+iframe {
+  aspect-ratio: 14/9;
+  width: 100%; }
+
 @keyframes typing {
   from {
     width: 0; }
